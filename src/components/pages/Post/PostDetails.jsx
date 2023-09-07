@@ -68,7 +68,7 @@ function PostDetails() {
                       <Image
                         className={styles.post_images}
                         rounded
-                        src={`${process.env.REACT_APP_API}/images/posts/${image}`}
+                        src={`https://hope-qx6t.onrender.com/images/posts/${image}`}
                         alt={post.name}
                         key={index}
                       />

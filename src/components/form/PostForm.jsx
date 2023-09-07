@@ -49,7 +49,7 @@ function PostForm({ handleSubmit, postData, btnText }) {
             post.images &&
               post.images.map((image, index) => (
                 <img
-                  src={`${process.env.REACT_APP_API}/images/posts/${image}`}
+                  src={`https://hope-qx6t.onrender.com/images/posts/${image}`}
                   alt={post.name}
                   key={`${post.name}+${index}`} //ex: dog1, dog2
                 ></img>

@@ -49,7 +49,7 @@ function Home() {
                     >
                       <div
                         style={{
-                          backgroundImage: `url(${process.env.REACT_APP_API}/images/posts/${post.images[0]})`,
+                          backgroundImage: `url(https://hope-qx6t.onrender.com/images/posts/${post.images[0]})`,
                         }}
                         className={styles.post_card_image}
                       ></div>

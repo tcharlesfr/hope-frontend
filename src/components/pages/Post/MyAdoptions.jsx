@@ -40,7 +40,7 @@ function MyAdoptions() {
           posts.map((post) => (
             <div className={styles.postlist_row} key={post._id}>
               <RoundedImage
-                src={`${process.env.REACT_APP_API}/images/posts/${post.images[0]}`}
+                src={`https://hope-qx6t.onrender.com/images/posts/${post.images[0]}`}
                 alt={post.name}
                 width="px75"
               />
