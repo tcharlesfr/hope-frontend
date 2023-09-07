@@ -2,12 +2,11 @@ import { useState } from "react";
 import formStyles from "./Form.module.css";
 
 import Input from "./Input";
-import Select from "./Select";
+// import Select from "./Select";
 
 function PostForm({ handleSubmit, postData, btnText }) {
   const [post, setPost] = useState( postData || {});
   const [preview, setPreview] = useState([]);
-  const colors = ["Branco", "Preto", "Cinza", "Caramelo", "Mesclado"];
 
   function onFileChange(e) {
     //as imagens recebidas do filechange viram um array
@@ -21,10 +20,10 @@ function PostForm({ handleSubmit, postData, btnText }) {
     setPost({ ...post, [e.target.name]: e.target.value });
   }
 
-  function handleColor(e) {
-    //acessar todas opeções do select: e.target.options | para selecinar a cor escolhida em forma de texto: [e.target.selectedIndex].text
-    setPost({ ...post, color: e.target.options[e.target.selectedIndex].text });
-  }
+  // function handleColor(e) {
+  //   //acessar todas opeções do select: e.target.options | para selecinar a cor escolhida em forma de texto: [e.target.selectedIndex].text
+  //   setPost({ ...post, color: e.target.options[e.target.selectedIndex].text });
+  // }
 
   function submit(e) {
     e.preventDefault();

@@ -2,7 +2,7 @@ import api from "../../../utils/api";
 
 import { useState, useEffect } from "react";
 
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import RoundedImage from "../../layout/RoundedImage";
 
@@ -12,8 +12,8 @@ import styles from "./Dashboard.module.css";
 import useFlashMessage from "../../../hooks/useFlashMessage";
 import Navbar2 from "../../layout/Navbar";
 import Container from "react-bootstrap/esm/Container";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+// import Button from "react-bootstrap/Button";
+// import Modal from "react-bootstrap/Modal";
 import Message from "../../layout/Message";
 
 function MyPosts() {
@@ -22,9 +22,9 @@ function MyPosts() {
   const { setFlashMessage } = useFlashMessage();
 
   //modal
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   //chamar a api, enviando o token de autorização
   useEffect(() => {

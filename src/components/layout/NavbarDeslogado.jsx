@@ -1,4 +1,4 @@
-import api from "../../utils/api";
+// import api from "../../utils/api";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
@@ -11,18 +11,18 @@ import styles from "./Navbar.module.css";
 import Logo from "../../assets/img/logobranco.png";
 // import LogoUser from "../../assets/img/pessoa.png";
 
-import { useContext } from "react";
-import { useState, useEffect } from "react";
+// import { useContext } from "react";
+// import { useState } from "react";
 
 // contexto do usuario
-import { Context } from "../../context/UserContext";
+// import { Context } from "../../context/UserContext";
 
 function Navbar2() {
   //pega o contexto que tem o acesso
   // const { authenticated, logout } = useContext(Context);
 
   //pegar o token para pegar os dados do usuario
-  const [token] = useState(localStorage.getItem("token") || "");
+  // const [token] = useState(localStorage.getItem("token") || "");
   // const [user, setUser] = useState({});
 
   return (

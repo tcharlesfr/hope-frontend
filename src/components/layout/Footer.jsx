@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 import linkedin from '../../assets/img/linkedin.png'
 import instagram from '../../assets/img/instagram.png'
-import hopeLogo from '../../assets/img/logobranco.png'
+// import hopeLogo from '../../assets/img/logobranco.png'
 
 function Footer() {
   return (

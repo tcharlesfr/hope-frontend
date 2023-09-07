@@ -12,8 +12,8 @@ import styles from "./Dashboard.module.css";
 import useFlashMessage from "../../../hooks/useFlashMessage";
 import Navbar2 from "../../layout/Navbar";
 import Container from "react-bootstrap/esm/Container";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+// import Button from "react-bootstrap/Button";
+// import Modal from "react-bootstrap/Modal";
 
 function MyPosts() {
   const [posts, setPosts] = useState([]);
@@ -21,9 +21,9 @@ function MyPosts() {
   const { setFlashMessage } = useFlashMessage();
 
   //modal
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   //chamar a api, enviando o token de autorização
   useEffect(() => {
@@ -70,25 +70,25 @@ function MyPosts() {
     }
   }
 
-  async function concludeAdoption(id) {
-    let msgType = "success";
+  // async function concludeAdoption(id) {
+  //   let msgType = "success";
 
-    const data = await api
-      .patch(`/posts/conclude/${id}`, {
-        headers: {
-          Authorization: `Bearer ${JSON.parse(token)}`,
-        },
-      })
-      .then((response) => {
-        return response.data;
-      })
-      .catch((err) => {
-        msgType = "error";
-        return err.response.data;
-      });
+  //   const data = await api
+  //     .patch(`/posts/conclude/${id}`, {
+  //       headers: {
+  //         Authorization: `Bearer ${JSON.parse(token)}`,
+  //       },
+  //     })
+  //     .then((response) => {
+  //       return response.data;
+  //     })
+  //     .catch((err) => {
+  //       msgType = "error";
+  //       return err.response.data;
+  //     });
 
-    setFlashMessage(data.message, msgType);
-  }
+  //   setFlashMessage(data.message, msgType);
+  // }
 
   const navigate = useNavigate();
   return (
