@@ -1,0 +1,31 @@
+.post_container {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+
+.post_card_image {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+.header {
+    text-align: center;
+    margin: 1em 0;
+    padding-top: 0.4em;
+    padding-bottom: 1px;
+    background-color: #3669f6;
+    color: white;
+    border-radius: 10px;
+}
+.carrossel{
+    border-radius: 10px;
+}
+
+.description {
+    min-height: 4.5em;
+}

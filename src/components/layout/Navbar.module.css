@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.drop {
+    text-align: right;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo_user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo_user  img {
+    width: 50px;
+    margin-right: 0.8em;
+    border-radius: 100%;
+    
+}
+
+.navbar_logo img {
+    width: 100px;
+    margin-right: 0.8em;
+}
+
+.navbar ul{
+    display: flex;
+    font-size: 1em;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li, a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+}
+
+.navbar li:hover > a{
+    background-color: white;
+    color: rgb(49, 49, 49);
+}
+
+.text {
+    color: white;
+}
+
+.text a {
+    color: white;
+}
